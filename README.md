@@ -6,17 +6,18 @@ Cursada el primer cuatrimestre del 2018.
 
 #############################################################################################
 
-TP2 - Generador de crucigramas
-Consigna
+### TP2 - Generador de crucigramas
+
+Consigna:
 El objetivo del trabajo práctico es implementar un generador de crucigramas simples.
 
-Entrada
+Entrada:
 Se dispone de un archivo palabras.csv con el siguiente formato:
 
 palabra|definicion
 A partir de dicho archivo el programa debe seleccionar un conjunto de palabras al azar (uno distinto cada vez que se ejecuta) y generar un crucigrama.
 
-Crucigrama
+Crucigrama:
 El crucigrama generado debe cumplir con las siguientes condiciones:
 
 Debe tener una sola palabra horizontal, de al menos 8 letras.
@@ -51,6 +52,9 @@ El programa podría elegir al azar FUNDAMENTO para la palabra horizontal (ya que
 
 $ python tp2.py -s
 
+
+
+
 CRUCIGRAMA
 
     1   2   3     4   5
@@ -76,6 +80,9 @@ H. Razón, motivo
 
 SOLUCION
 
+
+
+
     1   2   3     4   5
 
             S         A
@@ -87,9 +94,11 @@ H   F U N D A M E N T O
     R       L     O   A
             O     B
                   E
+
+
 (Si no se hubiese pasado la opción -s no habría salido la sección SOLUCION.)
 
-Parámetros de la línea de comandos
+Parámetros de la línea de comandos:
 Para leer los parámetros de la línea de comandos, recomendamos utilizar el módulo argparse de la siguiente manera:
 
 import argparse
@@ -105,5 +114,5 @@ def main():
 
 main()
 
-Material
+Material:
 Archivo CSV con más de 17.500 palabras y definiciones: palabras.zip
